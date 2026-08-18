@@ -1,0 +1,48 @@
+{
+  "name": "eslint-plugin-antislop",
+  "version": "0.1.0",
+  "description": "ESLint rules that reject low-evidence and low-signal TypeScript and JavaScript patterns.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./effect": {
+      "types": "./types/effect.d.ts",
+      "default": "./dist/effect.js"
+    }
+  },
+  "files": [
+    "dist",
+    "types",
+    "LICENSE",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "build": "esbuild src/index.mjs src/effect.mjs --bundle --platform=node --format=esm --outdir=dist --sourcemap",
+    "test": "pnpm build && node --test",
+    "check": "pnpm test && npm pack --dry-run"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "typescript",
+    "anti-slop"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.62.0",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.0.0",
+    "oxlint-plugin-anti-slop": "github:dmmulroy/anti-slop#6d538555cb151d4121ed51a27db81890eacf8ae9"
+  },
+  "packageManager": "pnpm@10.19.0"
+}
