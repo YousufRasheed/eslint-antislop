@@ -1,17 +1,17 @@
-# eslint-plugin-antislop
+# @yousufrasheed/eslint-plugin-antislop
 
 ESLint packaging for [dmmulroy/anti-slop](https://github.com/dmmulroy/anti-slop): opinionated rules that reject low-evidence and low-signal TypeScript and JavaScript patterns.
 
 ## Install
 
 ```sh
-pnpm add -D eslint-plugin-antislop
+pnpm add -D @yousufrasheed/eslint-plugin-antislop
 ```
 
 Add the flat preset after your JavaScript or TypeScript parser configuration:
 
 ```js
-import antislop from "eslint-plugin-antislop";
+import antislop from "@yousufrasheed/eslint-plugin-antislop";
 
 export default [
   // Your parser configuration, such as typescript-eslint's recommended config.
@@ -37,7 +37,7 @@ export default [
 Projects using Effect can enable the separate architecture rule:
 
 ```js
-import antislopEffect from "eslint-plugin-antislop/effect";
+import antislopEffect from "@yousufrasheed/eslint-plugin-antislop/effect";
 
 export default [antislopEffect.configs.recommended];
 ```

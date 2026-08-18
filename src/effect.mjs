@@ -38,7 +38,7 @@ const noServiceConstructorImports = {
 };
 
 const plugin = {
-  meta: { name: "eslint-plugin-antislop/effect", version: "0.1.0" },
+  meta: { name: "@yousufrasheed/eslint-plugin-antislop/effect", version: "0.1.0" },
   rules: { "no-service-constructor-imports": noServiceConstructorImports },
   configs: {},
 };

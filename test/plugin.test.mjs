@@ -4,8 +4,8 @@ import test from "node:test";
 import parser from "@typescript-eslint/parser";
 import { Linter } from "eslint";
 
-import plugin from "eslint-plugin-antislop";
-import effectPlugin from "eslint-plugin-antislop/effect";
+import plugin from "@yousufrasheed/eslint-plugin-antislop";
+import effectPlugin from "@yousufrasheed/eslint-plugin-antislop/effect";
 
 const cases = {
   "no-chained-type-assertions": "const user = input as object as User;",
