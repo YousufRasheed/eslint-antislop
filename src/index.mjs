@@ -37,7 +37,7 @@ const rules = {
 };
 
 const plugin = {
-  meta: { name: "eslint-plugin-antislop", version: "0.1.0" },
+  meta: { name: "@yousufrasheed/eslint-plugin-antislop", version: "0.1.0" },
   rules,
   configs: {},
 };
