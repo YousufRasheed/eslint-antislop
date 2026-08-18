@@ -2,6 +2,14 @@
   "name": "eslint-plugin-antislop",
   "version": "0.1.0",
   "description": "ESLint rules that reject low-evidence and low-signal TypeScript and JavaScript patterns.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YousufRasheed/eslint-antislop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YousufRasheed/eslint-antislop/issues"
+  },
+  "homepage": "https://github.com/YousufRasheed/eslint-antislop#readme",
   "type": "module",
   "exports": {
     ".": {
@@ -32,6 +40,10 @@
     "anti-slop"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "engines": {
     "node": ">=20.19.0"
   },
