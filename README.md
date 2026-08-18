@@ -61,4 +61,4 @@ export default [antislopEffect.configs.recommended];
 - `require-safety-comment-for-type-assertion`
 - Effect: `no-service-constructor-imports`
 
-The generic rules are pinned to upstream commit `6d538555cb151d4121ed51a27db81890eacf8ae9` and bundled into the published package. See upstream's README for rule rationale and examples.
+The generic rules come from [this anti-slop commit](https://github.com/dmmulroy/anti-slop/commit/6d538555cb151d4121ed51a27db81890eacf8ae9) and are included in this package. See the [upstream README at that commit](https://github.com/dmmulroy/anti-slop/blob/6d538555cb151d4121ed51a27db81890eacf8ae9/README.md) for explanations and examples.
