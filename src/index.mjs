@@ -9,6 +9,10 @@ function withLegacyOffsets(rule) {
       return {
         ...listeners,
         Program(node) {
+          for (const comment of context.sourceCode.getAllComments()) {
+            if (comment.range) [comment.start, comment.end] = comment.range;
+          }
+
           const pending = [node];
           while (pending.length > 0) {
             const current = pending.pop();
@@ -32,12 +36,15 @@ function withLegacyOffsets(rule) {
 
 const rules = {
   ...upstream.rules,
-  // typescript-eslint uses range while the upstream rule expects start/end offsets.
+  // typescript-eslint uses range while these upstream rules expect start/end offsets.
   "no-widen-then-assert": withLegacyOffsets(upstream.rules["no-widen-then-assert"]),
+  "require-safety-comment-for-type-assertion": withLegacyOffsets(
+    upstream.rules["require-safety-comment-for-type-assertion"],
+  ),
 };
 
 const plugin = {
-  meta: { name: "@yousufrasheed/eslint-plugin-antislop", version: "0.1.0" },
+  meta: { name: "@yousufrasheed/eslint-plugin-antislop", version: "0.1.1" },
   rules,
   configs: {},
 };

@@ -1,6 +1,6 @@
 {
   "name": "@yousufrasheed/eslint-plugin-antislop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint rules that reject low-evidence and low-signal TypeScript and JavaScript patterns.",
   "repository": {
     "type": "git",

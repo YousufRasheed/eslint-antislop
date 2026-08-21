@@ -65,6 +65,22 @@ test("no-widen-then-assert handles sparse AST child arrays", () => {
   assert.equal(messages.length, 0, JSON.stringify(messages));
 });
 
+test("require-safety-comment-for-type-assertion recognizes SAFETY comments", () => {
+  const messages = lint(
+    "// SAFETY: the API guarantees a string here.\nconst userId = value as UserId;",
+    "require-safety-comment-for-type-assertion",
+  );
+  assert.equal(messages.length, 0, JSON.stringify(messages));
+});
+
+test("require-safety-comment-for-type-assertion recognizes comments on the containing statement", () => {
+  const messages = lint(
+    "function parse(raw: unknown) {\n  // SAFETY: payload is validated upstream.\n  const data = raw as { id: string };\n  return data;\n}",
+    "require-safety-comment-for-type-assertion",
+  );
+  assert.equal(messages.length, 0, JSON.stringify(messages));
+});
+
 test("Effect rule rejects runtime constructor imports", () => {
   const messages = new Linter({ configType: "flat" }).verify(
     'import { makeIssueService } from "./issue-service.js";',
