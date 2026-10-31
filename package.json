@@ -54,7 +54,7 @@
     "@typescript-eslint/parser": "^8.62.0",
     "esbuild": "^0.25.0",
     "eslint": "^9.0.0",
-    "oxlint-plugin-anti-slop": "github:dmmulroy/anti-slop#6d538555cb151d4121ed51a27db81890eacf8ae9"
+    "oxlint-plugin-anti-slop": "github:dmmulroy/anti-slop#13909c9e07590f5a85d93c62712259fe14a883f7"
   },
   "packageManager": "pnpm@10.19.0"
 }

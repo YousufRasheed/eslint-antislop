@@ -18,8 +18,8 @@ importers:
         specifier: ^9.0.0
         version: 9.39.5
       oxlint-plugin-anti-slop:
-        specifier: github:dmmulroy/anti-slop#6d538555cb151d4121ed51a27db81890eacf8ae9
-        version: https://codeload.github.com/dmmulroy/anti-slop/tar.gz/6d538555cb151d4121ed51a27db81890eacf8ae9
+        specifier: github:dmmulroy/anti-slop#13909c9e07590f5a85d93c62712259fe14a883f7
+        version: https://codeload.github.com/dmmulroy/anti-slop/tar.gz/13909c9e07590f5a85d93c62712259fe14a883f7
 
 packages:
 
@@ -519,9 +519,9 @@ packages:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
 
-  oxlint-plugin-anti-slop@https://codeload.github.com/dmmulroy/anti-slop/tar.gz/6d538555cb151d4121ed51a27db81890eacf8ae9:
-    resolution: {tarball: https://codeload.github.com/dmmulroy/anti-slop/tar.gz/6d538555cb151d4121ed51a27db81890eacf8ae9}
-    version: 0.1.0
+  oxlint-plugin-anti-slop@https://codeload.github.com/dmmulroy/anti-slop/tar.gz/13909c9e07590f5a85d93c62712259fe14a883f7:
+    resolution: {tarball: https://codeload.github.com/dmmulroy/anti-slop/tar.gz/13909c9e07590f5a85d93c62712259fe14a883f7}
+    version: 0.1.2
 
   p-limit@3.1.0:
     resolution: {integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==}
@@ -1070,7 +1070,7 @@ snapshots:
       type-check: 0.4.0
       word-wrap: 1.2.5
 
-  oxlint-plugin-anti-slop@https://codeload.github.com/dmmulroy/anti-slop/tar.gz/6d538555cb151d4121ed51a27db81890eacf8ae9:
+  oxlint-plugin-anti-slop@https://codeload.github.com/dmmulroy/anti-slop/tar.gz/13909c9e07590f5a85d93c62712259fe14a883f7:
     dependencies:
       '@oxlint/plugins': 1.78.0
 
