@@ -44,6 +44,8 @@ export default [antislopEffect.configs.recommended];
 
 ## Rules
 
+- `no-array-filter-map`
+- `no-reduce-accumulator-copy`
 - `no-chained-type-assertions`
 - `no-conditional-empty-object-spread`
 - `no-known-value-widening`
@@ -58,7 +60,10 @@ export default [antislopEffect.configs.recommended];
 - `no-unknown-type-aliases`
 - `no-unsafe-dictionary-type`
 - `no-widen-then-assert`
+- `require-readable-spacing`
 - `require-safety-comment-for-type-assertion`
 - Effect: `no-service-constructor-imports`
 
-The generic rules come from [this anti-slop commit](https://github.com/dmmulroy/anti-slop/commit/6d538555cb151d4121ed51a27db81890eacf8ae9) and are included in this package. See the [upstream README at that commit](https://github.com/dmmulroy/anti-slop/blob/6d538555cb151d4121ed51a27db81890eacf8ae9/README.md) for explanations and examples.
+The generic rules come from [this anti-slop commit](https://github.com/dmmulroy/anti-slop/commit/13909c9e07590f5a85d93c62712259fe14a883f7) and are included in this package. See the [upstream README at that commit](https://github.com/dmmulroy/anti-slop/blob/13909c9e07590f5a85d93c62712259fe14a883f7/README.md) for explanations and examples.
+
+`require-readable-spacing` provides whitespace-only autofixes via `eslint --fix`. The recommended preset enables it and both array rules as errors.

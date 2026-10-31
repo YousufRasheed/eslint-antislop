@@ -37,6 +37,9 @@ function withLegacyOffsets(rule) {
 const rules = {
   ...upstream.rules,
   // typescript-eslint uses range while these upstream rules expect start/end offsets.
+  "no-reduce-accumulator-copy": withLegacyOffsets(
+    upstream.rules["no-reduce-accumulator-copy"],
+  ),
   "no-widen-then-assert": withLegacyOffsets(upstream.rules["no-widen-then-assert"]),
   "require-safety-comment-for-type-assertion": withLegacyOffsets(
     upstream.rules["require-safety-comment-for-type-assertion"],
